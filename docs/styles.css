@@ -19,7 +19,6 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
-    text-shadow: 0 0 7px black;
 }
 
 header h2 {
@@ -34,7 +33,7 @@ header h2 a {
 
 header h2 a:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(203, 158, 84);
 }
 
 /* ---------------------------Body----------------------------------- */
@@ -91,4 +90,26 @@ footer {
     align-items: center;
     color: white;
     text-shadow: 0 0 7px black;
+}
+
+/* --------------------------Mobile----------------------------------- */
+
+@media screen and (max-width: 402px) {
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-picture {
+        display: flex;
+    }
+
+    .hero-picture img {
+        width: 93%;
+        margin: 0 auto 100px;
+    }
+
+    .about-header,
+    .project-header {
+        margin-right: 20px;
+    }
 }
